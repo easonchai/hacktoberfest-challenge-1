@@ -17,6 +17,6 @@
 - There are additionally 5 freebie pull requests you can claim by modifying this README file by:
     - Adding instructions
     - Modifying typos
-    - Be creative & add additional content! (e.g. What is Hacktoberfest about?)
+    - Be creative! (e.g. What is Hacktoberfest about?, add functionalities to the source code)
 
 - ### Instructions
