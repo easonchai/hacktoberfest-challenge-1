@@ -14,9 +14,13 @@
 
 ## Getting Started 🗺️
 - There are 5 bugs 🕷️ found in the source code of the Python project. Find it, solve it, and open a PR!
-- There are additionally 5 freebie pull requests you can claim by modifying this README file by:
-    - Adding instructions
-    - Modifying typos
-    - Be creative! (e.g. What is Hacktoberfest about?, add functionalities to the source code)
+- There are **additional freebie pull requests** you can claim by modifying this README file and:
+    - Add instructions
+    - Fix typos
+    - Be creative! (e.g. What is Hacktoberfest about?)
+- Not interested in fixing the README? Modify the source code! Add comments, refactor code, mess around!
 
 - ### Instructions
+    - *TODO... plz add*
+
+You are encouraged to improve on the source code because that is where your creativity shines and the possibilities are endless!
