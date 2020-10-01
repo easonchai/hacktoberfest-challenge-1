@@ -1,4 +1,5 @@
 import random
+#ADD WHATS THE CODE ABOUT
 
 database = []
 
