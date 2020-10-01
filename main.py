@@ -1,6 +1,11 @@
 import random
+import re
 
 database = []
+
+def email_validation(email):
+    return re.search('^[a-z0-9]+[\._]?[a-z0-9]*[@]\w+[.]\w{2,3}$',email)
+
 
 def print_divider():
     print("+----+" + "-" *20 + "+-----+" + "-" * 25 + "+")
@@ -10,7 +15,13 @@ def create():
 
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    email = input("Enter email: ")
+    
+    email = input("Enter email: ").strip()
+    if(not email_validation(email)): 
+        print()
+        print("Invalid Email")
+        main_menu()
+
     newId = len(database)+1
     database.append([newId,name, age,email])
     print("Student added!")
@@ -42,7 +53,11 @@ def edit():
     
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    email = input("Enter email: ")
+    email = input("Enter email: ").strip()
+    if(not email_validation(email)): 
+        print()
+        print("Invalid Email")
+        main_menu()
     
     database[userInput-1] = [userInput, name, age, email]
 
