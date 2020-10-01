@@ -11,6 +11,11 @@
 
 ## Fixed ✅
 - [x] Example fix, copy this as a template!
+- [x] Fix accidental comment on email field
+- [x] Fix database new student entry not including email
+- [x] Fix random id generated on view function
+- [x] Fix database delete feature remove function to pop function
+- [x] Add email validation
 
 ## Getting Started 🗺️
 - There are 5 bugs 🕷️ found in the source code of the Python project. Find it, solve it, and open a PR!
