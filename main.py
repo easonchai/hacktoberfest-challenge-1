@@ -10,7 +10,7 @@ def create():
 
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    # email = input("Enter email: ")
+    email = input("Enter email: ")
     newId = len(database)+1
     database.append([newId,name, age])
     print("Student added!")
