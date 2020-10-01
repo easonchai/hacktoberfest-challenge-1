@@ -12,7 +12,7 @@ def create():
     age = int(input("Enter age: "))
     email = input("Enter email: ")
     newId = len(database)+1
-    database.append([newId,name, age])
+    database.append([newId,name, age,email])
     print("Student added!")
 
 def view():
