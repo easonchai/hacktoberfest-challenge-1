@@ -23,10 +23,6 @@ def view():
 
     for row in database:
         userId = str(row[0])
-        chance = random.randint(0, 100)
-        if chance >= 70:
-            userId = str(random.randint(1, 100))
-
         name = row[1]
         age = str(row[2])
         email = row[3]
@@ -41,13 +37,13 @@ def view():
 def edit():
     view()
     print()
-    userInput = input("Enter the id of the student you want to edit: ")
+    userInput = int(input("Enter the id of the student you want to edit: "))
     global database
-
+    
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
     email = input("Enter email: ")
-
+    
     database[userInput-1] = [userInput, name, age, email]
 
     print("Student successfully edited!")
