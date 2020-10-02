@@ -10,9 +10,9 @@ def create():
 
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    # email = input("Enter email: ")
+    email = input("Enter email: ")
     newId = len(database)+1
-    database.append([newId,name, age])
+    database.append([newId,name,age,email])
     print("Student added!")
 
 def view():
@@ -29,13 +29,13 @@ def view():
 
         name = row[1]
         age = str(row[2])
-        # email = row[3]
+        email = row[3]
 
         print("|", end="")
         print(userId.center(3), "|", end="")
         print(name.center(19), "|", end="")
         print(age.center(4), "|", end="")
-        # print(email.center(24), "|")
+        print(email.center(24), "|")
         print_divider()
 
 def edit():
