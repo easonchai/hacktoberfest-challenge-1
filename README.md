@@ -10,6 +10,7 @@
 - Have fun and support other open source projects!
 
 ## Fixed ✅
+- Bug on create() -> email query commented + element not inserted on database properly :D
 - [x] Example fix, copy this as a template!
 
 ## Getting Started 🗺️
@@ -21,6 +22,12 @@
 - Not interested in fixing the README? Modify the source code! Add comments, refactor code, mess around!
 
 - ### Instructions
-    - *TODO... plz add*
+    - Recommended path:
+        - Fork repository into your own profile (Fork button on top-right corner)
+        - Clone forked repository into your local machine:
+            - Download as zip (not really useful)
+            - Clone through git directly with: git clone <url> (on windows)
+        - Modify the repository as you see fit
+        - Ask for a Pull Request through the button on your forked repository's page!    
 
 You are encouraged to improve on the source code because that is where your creativity shines and the possibilities are endless!
