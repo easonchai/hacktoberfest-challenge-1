@@ -11,6 +11,7 @@
 
 ## Fixed ✅
 - [x] Example fix, copy this as a template!
+- [x] Added email field creation
 
 ## Getting Started 🗺️
 - There are 5 bugs 🕷️ found in the source code of the Python project. Find it, solve it, and open a PR!
