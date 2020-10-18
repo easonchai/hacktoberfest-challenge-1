@@ -10,9 +10,11 @@ def create():
 
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    # email = input("Enter email: ")
+    # Uncommented email
+    email = input("Enter email: ")
     newId = len(database)+1
-    database.append([newId,name, age])
+    # Added email
+    database.append([newId, name, age, email])
     print("Student added!")
 
 def view():
