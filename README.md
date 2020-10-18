@@ -13,14 +13,14 @@
 
 ## Fixed ✅
 
-- [x] Example fix, copy this as a template!
+- [x] Example fix, copy this as a template!=
 - Hello! There!
 
 ## Getting Started 🗺️
 
 - There are 5 bugs 🕷️ found in the source code of the Python project. Find it, solve it, and open a PR!
 - There are **additional freebie pull requests** you can claim by modifying this README file and:
-  - Add instructions
+  - Add instructionsasdasd
   - Fix typos
   - Be creative! (e.g. What is Hacktoberfest about?)
 - Not interested in fixing the README? Modify the source code! Add comments, refactor code, mess around!
