@@ -14,7 +14,7 @@
 ## Fixed ✅
 
 - [x] Example fix, copy this as a template!
-- Hello!
+- Hello! There!
 
 ## Getting Started 🗺️
 
