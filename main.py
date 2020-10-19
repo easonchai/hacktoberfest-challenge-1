@@ -55,7 +55,7 @@ def delete():
     userInput = int(input("Enter the id of the student you want to delete: "))
 
     global database
-    database.remove(userInput-1)
+    database.pop(userInput-1)
 
     print("Student removed!")
 
