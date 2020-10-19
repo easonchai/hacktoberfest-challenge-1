@@ -23,9 +23,6 @@ def view():
 
     for row in database:
         userId = str(row[0])
-        chance = random.randint(0, 100)
-        if chance >= 70:
-            userId = str(random.randint(1, 100))
 
         name = row[1]
         age = str(row[2])
