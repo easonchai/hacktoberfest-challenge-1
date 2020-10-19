@@ -38,7 +38,7 @@ def view():
 def edit():
     view()
     print()
-    userInput = input("Enter the id of the student you want to edit: ")
+    userInput = int(input("Enter the id of the student you want to edit: "))
     global database
 
     name = input("Enter name of student: ")
