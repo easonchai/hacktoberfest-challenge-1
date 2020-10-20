@@ -21,6 +21,7 @@
 - Not interested in fixing the README? Modify the source code! Add comments, refactor code, mess around!
 
 - ### Instructions
-    - *TODO... plz add*
+    - Four steps: asdasd
+        -asdjbaksdjabksd
 
 You are encouraged to improve on the source code because that is where your creativity shines and the possibilities are endless!
