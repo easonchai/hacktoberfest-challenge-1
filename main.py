@@ -2,18 +2,21 @@ import random
 
 database = []
 
+
 def print_divider():
-    print("+----+" + "-" *20 + "+-----+" + "-" * 25 + "+")
+    print("+----+" + "-" * 20 + "+-----+" + "-" * 25 + "+")
+
 
 def create():
     global database
 
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    # email = input("Enter email: ")
+    email = input("Enter email: ")
     newId = len(database)+1
-    database.append([newId,name, age])
+    database.append([newId, name, age, email])
     print("Student added!")
+
 
 def view():
     print("=== View Students ===")
@@ -23,9 +26,9 @@ def view():
 
     for row in database:
         userId = str(row[0])
-        chance = random.randint(0, 100)
-        if chance >= 70:
-            userId = str(random.randint(1, 100))
+        # chance = random.randint(0, 100)
+        # if chance >= 70:
+        #     userId = str(random.randint(1, 100))
 
         name = row[1]
         age = str(row[2])
@@ -38,10 +41,11 @@ def view():
         print(email.center(24), "|")
         print_divider()
 
+
 def edit():
     view()
     print()
-    userInput = input("Enter the id of the student you want to edit: ")
+    userInput = int(input("Enter the id of the student you want to edit: "))
     global database
 
     name = input("Enter name of student: ")
@@ -52,18 +56,21 @@ def edit():
 
     print("Student successfully edited!")
 
+
 def delete():
     view()
     print()
     userInput = int(input("Enter the id of the student you want to delete: "))
 
     global database
-    database.remove(userInput-1)
+    database.pop(userInput-1)
 
     print("Student removed!")
 
+
 def print_error():
     print("Invalid choice!")
+
 
 def main_menu():
     while True:
@@ -74,7 +81,7 @@ def main_menu():
         print("3. Edit member")
         print("4. Delete member")
         print("5. Exit")
-        
+
         choice = int(input("Please choose an option: "))
 
         if choice == 5:
@@ -93,8 +100,10 @@ def main_menu():
         print("\n")
         func()
 
+
 def main():
     main_menu()
+
 
 if __name__ == "__main__":
     main()
