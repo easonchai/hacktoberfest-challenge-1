@@ -3,22 +3,23 @@ import random
 database = []
 
 def print_divider():
-    print("+----+" + "-" *20 + "+-----+" + "-" * 25 + "+")
+    print("+----+" + "-" *20 + "+-----+" + "-" * 25 + "+" + "-" *19 + "+")
 
 def create():
     global database
 
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
-    # email = input("Enter email: ")
+    email = input("Enter email: ")
+    dob = int(input("Enter date of birth (ddmmyyyy): "))
     newId = len(database)+1
-    database.append([newId,name, age])
-    print("Student added!")
+    database.append([newId,name, age, email, dob])
+    print("Student successfully added!")
 
 def view():
     print("=== View Students ===")
     print_divider()
-    print("| ID |        NAME        | AGE |          EMAIL          |")
+    print("| ID |        NAME        | AGE |          EMAIL          |        DOB        |")
     print_divider()
 
     for row in database:
@@ -30,12 +31,14 @@ def view():
         name = row[1]
         age = str(row[2])
         email = row[3]
+        dob=str(row[4])
 
         print("|", end="")
         print(userId.center(3), "|", end="")
         print(name.center(19), "|", end="")
         print(age.center(4), "|", end="")
-        print(email.center(24), "|")
+        print(email.center(24), "|", end="")
+        print(dob.center(18), "|")
         print_divider()
 
 def edit():
@@ -47,8 +50,10 @@ def edit():
     name = input("Enter name of student: ")
     age = int(input("Enter age: "))
     email = input("Enter email: ")
+    dob = int(input("Enter date of birth (ddmmyyyy): "))
 
-    database[userInput-1] = [userInput, name, age, email]
+
+    database[userInput-1] = [userInput, name, age, email, dob]
 
     print("Student successfully edited!")
 
@@ -60,7 +65,7 @@ def delete():
     global database
     database.remove(userInput-1)
 
-    print("Student removed!")
+    print("Student successfully removed!")
 
 def print_error():
     print("Invalid choice!")
@@ -69,10 +74,10 @@ def main_menu():
     while True:
         print()
         print("=== SUNWAY TECH CLUB MANAGEMENT SOFTWARE ===")
-        print("1. Create member")
-        print("2. View member")
-        print("3. Edit member")
-        print("4. Delete member")
+        print("1. Create Member")
+        print("2. View Member")
+        print("3. Edit Member")
+        print("4. Delete Member")
         print("5. Exit")
         
         choice = int(input("Please choose an option: "))
