@@ -10,7 +10,11 @@
 - Have fun and support other open source projects!
 
 ## Fixed ✅
-- [x] Example fix, copy this as a template!
+- Removed # sign in front of email field at line 13 to receive input
+- Added 'email' element to the database list at line 15
+- Removed line 26 - 28      chance = random.randint(0, 100) if chance >= 70:   userId = str(random.randint(1, 100))
+- Converted the userInput data type to int in line 44
+- Changed remove function to del in line 61
 
 ## Getting Started 🗺️
 - There are 5 bugs 🕷️ found in the source code of the Python project. Find it, solve it, and open a PR!
@@ -21,6 +25,6 @@
 - Not interested in fixing the README? Modify the source code! Add comments, refactor code, mess around!
 
 - ### Instructions
-    - *TODO... plz add*
+    - newId in line 14 should be generated with a counter instead of database list length
 
 You are encouraged to improve on the source code because that is where your creativity shines and the possibilities are endless!
