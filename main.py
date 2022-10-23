@@ -1,5 +1,5 @@
 import random
-
+#is it still in development
 database = []
 
 def print_divider():
